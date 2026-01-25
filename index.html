@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ICONÍCAS REMERAS - Football Heritage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde-neon: #2ecc71;
+            --verde-glow: rgba(46, 204, 113, 0.4);
+            --fondo-oscuro: #050505;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            /* EFECTO FOCO DE ESTADIO: Verde oscuro al centro, negro a los bordes */
+            background: radial-gradient(circle at center, #0f200f 0%, var(--fondo-oscuro) 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 6em;
+            margin: 0;
+            letter-spacing: 5px;
+            color: #fff;
+            line-height: 0.8;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .s {
+            color: #f1c40f;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-weight: 700;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+
+        .g {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px 20px 160px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* TARJETA CON EFECTO PROFUNDIDAD */
+        .p {
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .p:hover {
+            border-color: var(--verde-neon);
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px var(--verde-glow);
+            background: rgba(30, 30, 30, 0.9);
+        }
+
+        .img-container {
+            width: 100%;
+            height: 240px;
+            background: #000;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #222;
+            overflow: hidden;
+        }
+
+        .p img { width: 95%; height: 95%; object-fit: contain; }
+
+        h3 { font-family: 'Bebas Neue'; font-size: 2.2em; margin: 10px 0; letter-spacing: 1px; }
+
+        .v {
+            color: var(--verde-neon);
+            font-weight: 700;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .controles {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .b {
+            background: transparent;
+            color: white;
+            border: 2px solid var(--verde-neon);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .b:hover { background: var(--verde-neon); color: black; box-shadow: 0 0 15px var(--verde-neon); }
+
+        /* BARRA INFERIOR PREMIUM */
+        .f {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 2px solid var(--verde-neon);
+            padding: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            z-index: 1000;
+        }
+
+        #T {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: white;
+            min-width: 150px;
+            text-align: center;
+            background: #111;
+            padding: 5px 25px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        .fin {
+            background: var(--verde-neon);
+            color: black;
+            border: none;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .fin:hover { transform: scale(1.05); box-shadow: 0 0 25px var(--verde-neon); }
+
+        #m { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.98); align-items: center; justify-content: center; z-index: 2000; }
+        .x { background: #111; padding: 40px; border-radius: 25px; border: 2px solid var(--verde-neon); width: 90%; max-width: 400px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 4.5em;">ICONICAS REMERAS</h1>
+    <div class="s">Football Heritage - Campana</div>
+</header>
+
+<div class="g" id="G">Preparando el equipo...</div>
+
+<div class="f">
+    <div id="T">$0</div>
+    <button class="fin" onclick="V()">Cerrar Pedido</button>
+</div>
+
+<div id="m">
+    <div class="x">
+        <h2 style="font-family:'Bebas Neue'; color:var(--verde-neon); font-size: 3.5em; margin:0;">Pedido</h2>
+        <p id="R" style="color:#bbb; margin: 25px 0; text-align: left; font-size: 1.1em;"></p>
+        <div style="background:#1a1a1a; padding:20px; border-radius:15px; margin: 25px 0; border: 1px dashed #444;">
+            <small style="color: #f1c40f; letter-spacing: 2px;">ALIAS:</small><br>
+            <b style="font-size: 1.4em;">ICONICAS.REMERAS</b>
+        </div>
+        <button onclick="finalizarTodo()" style="background:var(--verde-neon); color:black; border:none; padding:20px; width:100%; border-radius:15px; font-weight:800; font-size: 1.2em; cursor:pointer;">ENVIAR A WHATSAPP</button>
+        <p onclick="document.getElementById('m').style.display='none'" style="margin-top:25px; cursor:pointer; color: #555; text-decoration: underline;">Volver al catálogo</p>
+    </div>
+</div>
+
+<script>
+    const urlScript = "https://script.google.com/macros/s/AKfycbwyGQ4Sp2AFJakWPRpVKpcwpwOg4tHdkWAypKHoRHRg3A_zKEGuxVIsF9_-rIK9_JuqhQ/exec"; 
+    const telWhatsApp = "543489541891";
+
+    let totalGlobal = 0; 
+    let textoGlobal = "";
+
+    async function cargarMenu() {
+        try {
+            const res = await fetch(urlScript);
+            const datos = await res.json();
+            const productos = datos.lista; 
+            const h = document.getElementById('G');
+            h.innerHTML = "";
+            productos.forEach(p => {
+                const imgTag = p.img ? `<img src="${p.img}">` : `<div style="color:#222; font-family:'Bebas Neue'; font-size:1.5em">ICONICAS</div>`;
+                h.innerHTML += `
+                    <div class="p" data-n="${p.nombre}" data-p="${p.precio}">
+                        <div class="img-container">${imgTag}</div>
+                        <h3>${p.nombre}</h3>
+                        <div class="v">$${parseInt(p.precio).toLocaleString()}</div>
+                        <div class="controles">
+                            <button class="b" onclick="U(this,-1)">-</button>
+                            <b class="c" style="width:40px; font-size:1.6em">0</b>
+                            <button class="b" onclick="U(this,1)">+</button>
+                        </div>
+                    </div>`;
+            });
+        } catch (e) { document.getElementById('G').innerHTML = "Error de conexión."; }
+    }
+
+    function U(b, v) {
+        let s = b.parentElement.querySelector('.c');
+        s.innerText = Math.max(0, parseInt(s.innerText) + v);
+        let t = 0;
+        document.querySelectorAll('.p').forEach(i => {
+            t += parseInt(i.querySelector('.c').innerText) * parseInt(i.getAttribute('data-p'));
+        });
+        totalGlobal = t;
+        document.getElementById('T').innerText = "$" + t.toLocaleString();
+    }
+
+    function V() {
+        if (!totalGlobal) return alert("Elegí al menos una remera");
+        let p = [];
+        document.querySelectorAll('.p').forEach(i => {
+            let cant = i.querySelector('.c').innerText;
+            if (cant > 0) p.push(cant + "x " + i.getAttribute('data-n'));
+        });
+        textoGlobal = p.join(", ");
+        document.getElementById('R').innerText = textoGlobal;
+        document.getElementById('m').style.display = 'flex';
+    }
+
+    async function finalizarTodo() {
+        const msj = encodeURIComponent("¡Hola! Pedido de ICONICAS:\n\n" + textoGlobal + "\n\nTotal: $" + totalGlobal);
+        window.open("https://wa.me/" + telWhatsApp + "?text=" + msj);
+    }
+
+    cargarMenu();
+</script>
+</body>
+</html>
