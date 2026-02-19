@@ -1,2 +1,4 @@
-*.js linguist-language=JavaScript
-*.html linguist-language=HTML
+index.html linguist-detectable=true
+index.html linguist-documentation=false
+# Forzar a que GitHub cuente el JS y CSS embebido
+*.html linguist-language=JavaScript
