@@ -1,43 +1,41 @@
-# 👕 Camisetas Icónicas - Full-Stack E-Commerce Solution
+👕 Iconic Jerseys - Full-Stack Lean E-Commerce Solution
+Iconic Jerseys is a high-performance e-commerce platform built on a "Lean Architecture." It is specifically designed for retail businesses seeking scalability and dynamic inventory management with zero infrastructure overhead.
 
-**Camisetas Icónicas** es una plataforma de comercio electrónico de alto rendimiento diseñada bajo una arquitectura "Lean", ideal para negocios que buscan escalabilidad sin costos operativos de infraestructura.
+🚀 Live Demo
+🔗 Visit Iconic Jerseys
 
----
+📊 Project Highlights
+Zero-Cost Infrastructure: Engineered a serverless backend using Google Apps Script, enabling dynamic database management without monthly server fees.
 
-## 🚀 Live Demo
-🔗 [Visitar Camisetas Icónicas](https://camisetasiconicas.netlify.app/)
+Optimized Performance: Initial load time of < 3 seconds, significantly reducing bounce rates and improving mobile accessibility.
 
----
+Scalable Inventory Management: Designed to handle 50+ SKUs with an infinite scaling path via a Google Sheets-based CMS, allowing non-technical staff to update stock in real-time.
 
-## 📊 Proyecto Highlights
-* **Arquitectura de Costo $0**: Implementación de un backend serverless utilizando **Google Apps Script**, permitiendo gestionar una base de datos dinámica sin gastos de servidor.
-* **Rendimiento Optimizado**: Tiempo de carga inicial de **< 5 segundos**, fundamental para reducir la tasa de rebote en usuarios móviles.
-* **Escalabilidad Inmediata**: El sistema está diseñado para manejar 54+ SKUs y escalar infinitamente mediante un CMS basado en Google Sheets accesible para perfiles no-técnicos.
+🎯 UX & Conversion Strategy
+This project focuses on the collector's journey, prioritizing speed and trust:
 
----
+Real-Time Discovery: Implemented a "Vanilla JS" on-the-fly filtering system that eliminates page reloads, streamlining the catalog exploration.
 
-## 🎯 Enfoque en UX (User Experience)
-Este proyecto no solo resuelve la venta, sino la experiencia del usuario coleccionista [cite: 2026-02-18]:
+Contextual UX Writing: Microcopy and CTAs tailored to the specific target market, enhancing user trust and purchase intent.
 
-* **Real-Time Discovery**: Sistema de búsqueda y filtrado "on-the-fly" (Vanilla JS) que elimina la carga de páginas, facilitando la exploración del catálogo.
-* **Contextual UX Writing**: Microcopy y CTAs adaptados específicamente al mercado argentino, aumentando la confianza y la conversión.
-* **Conversational Commerce**: Integración fluida con **WhatsApp Business** para cerrar la brecha entre la navegación y la compra personalizada.
-* **Information Architecture**: Organización lógica de categorías para una navegación intuitiva entre múltiples modelos y épocas de jerseys.
+Conversational Commerce: Seamless WhatsApp Business integration to bridge the gap between digital browsing and personalized closing.
 
----
+Efficient Information Architecture: Intuitive category organization for rapid navigation across multiple jersey eras and styles.
 
-## 🛠️ Stack Técnico
-* **Frontend**: Vanilla JavaScript (ES6+), HTML5, CSS3.
-* **Backend & API**: Google Apps Script (REST API personalizada).
-* **Database**: Google Sheets actuando como CMS dinámico.
-* **Deployment**: Netlify CDN para una distribución global rápida.
+🛠️ Technical Stack
+Frontend: Vanilla JavaScript (ES6+), HTML5, CSS3.
 
----
+Backend & API: Custom REST API via Google Apps Script.
 
-## 📁 Estructura del Proyecto
-* `/js`: Lógica de conexión con la API y renderizado dinámico.
-* `/css`: Diseño visual retro-moderno y responsive.
-* `index.html`: Punto de entrada único (SPA approach).
+Database: Google Sheets acting as a dynamic, real-time CMS.
 
----
-Desarrollado por [avilesejm-design](https://github.com/avilesejm-design) | Soluciones de diseño y desarrollo orientadas a resultados [cite: 2026-02-18].
+Deployment: Netlify CDN for fast global content delivery.
+
+📁 Project Structure
+/js: API integration logic and dynamic DOM rendering.
+
+/css: Responsive, retro-modern visual design.
+
+index.html: Main entry point following an SPA (Single Page Application) approach.
+
+Developed by avilesejm-design | Result-oriented design and development solutions.
